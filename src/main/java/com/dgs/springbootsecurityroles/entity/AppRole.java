@@ -1,5 +1,6 @@
 package com.dgs.springbootsecurityroles.entity;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
@@ -11,6 +12,7 @@ public class AppRole {
 
 	@Id
 	@GeneratedValue
+	@Column(name="role_id")
 	private long id;
 	
 	private String name;

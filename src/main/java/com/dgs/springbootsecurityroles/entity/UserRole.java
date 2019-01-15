@@ -17,11 +17,11 @@ public class UserRole {
 	private long id;
 	
 	@ManyToOne(fetch=FetchType.LAZY)
-	@JoinColumn(name="id")
+	@JoinColumn(name="user_id")
 	private AppUser appUser;
 	
-	@ManyToOne
-	@JoinColumn(name="id")
+	@ManyToOne(fetch = FetchType.LAZY)
+	@JoinColumn(name="role_id")
 	private AppRole appRole;
 
 	public long getId() {
